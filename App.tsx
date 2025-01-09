@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import Checkbox from "expo-checkbox";
+import "react-native-get-random-values";
 import { v4 as uuidv4 } from "uuid";
 import { TTask, TTaskProps } from "./task.type";
 
@@ -96,6 +97,7 @@ const App = () => {
     );
     setTasks(updatedTasks);
     setTaskText("");
+    setEditTaskId("");
   };
 
   return (
